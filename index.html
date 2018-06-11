@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<link href="app/style.css" rel="stylesheet">
+<script src="main.js"></script>
+	<title>Vue Practice</title>
+</head>
+
+<body class="container">
+
+	<div id="main">
+		<h1>V-model</h1>
+    <p>is a directive to create two-way data bindings on form input and textarea elements.</p>
+    <input v-model="message" placeholder="edit me">
+    <p>Message is: {{ message }}</p>
+    <br>
+
+    <span>Multiline message is:</span>
+    <p style="white-space: pre-line;">{{ message }}</p>
+    <br>
+    <textarea v-model="message" placeholder="add multiple lines"></textarea>
+
+
+  </div>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+	<script src="main.js"></script>
+</body>
+</html>
